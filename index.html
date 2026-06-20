@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Калькулятор КБЖУ | Александр</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="theme-color" content="#1c1c1e">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>
+        Калькулятор КБЖУ
+        <span>Александр</span>
+    </h1>
+
+    <div class="card input-card">
+
+        <div class="gender-box">
+            <button class="gender-btn active"
+                    id="maleBtn">
+                Мужчина
+            </button>
+
+            <button class="gender-btn"
+                    id="femaleBtn">
+                Женщина
+            </button>
+        </div>
+
+        <div class="inputs">
+
+            <input
+                    type="number"
+                    id="height"
+                    placeholder="Рост (см)"
+            >
+
+            <input
+                    type="number"
+                    id="weight"
+                    placeholder="Вес (кг)"
+            >
+
+            <input
+                    type="number"
+                    id="age"
+                    placeholder="Возраст"
+            >
+
+        </div>
+
+        <select id="activity">
+
+            <option value="1.2">
+                1.2 — Нет нагрузок
+            </option>
+
+            <option value="1.375">
+                1.375 — Активный образ жизни
+            </option>
+
+            <option value="1.4625">
+                1.4625 — Тренировки 3-4 раза в неделю
+            </option>
+
+            <option value="1.55">
+                1.55 — Интенсивные тренировки
+            </option>
+
+            <option value="1.6375">
+                1.6375 — Ежедневные тренировки
+            </option>
+
+            <option value="1.725">
+                1.725 — Интенсивные тренировки 2 раза в день
+            </option>
+
+        </select>
+
+        <button id="calculateBtn">
+            Рассчитать
+        </button>
+
+        <a
+                href="https://t.me/alexclubs/36"
+                target="_blank"
+                class="telegram-btn"
+        >
+            🔥 Персональное ведение — скидка 20%
+        </a>
+
+    </div>
+
+    <div class="formula-info"
+         id="formulaInfo">
+
+        Введите данные и нажмите «Рассчитать»
+
+    </div>
+
+    <div class="results">
+
+        <div class="card result-card">
+
+            <h2>🔥 Дефицит</h2>
+
+            <div id="deficit">
+                —
+            </div>
+
+        </div>
+
+        <div class="card result-card">
+
+            <h2>⚖️ Норма</h2>
+
+            <div id="normal">
+                —
+            </div>
+
+        </div>
+
+        <div class="card result-card">
+
+            <h2>🚀 Профицит</h2>
+
+            <div id="surplus">
+                —
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
