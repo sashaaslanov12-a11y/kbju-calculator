@@ -127,6 +127,15 @@ select:focus {
     white-space: normal;
 }
 
+input,
+select,
+button,
+.telegram-btn {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 .telegram-btn:hover {
     transform: translateY(-2px);
     background: #278c60;
@@ -170,31 +179,20 @@ select:focus {
     margin-top: 10px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 500px) {
 
-    h1 {
-        font-size: 32px;
+    .container {
+        padding: 15px;
     }
 
-    .inputs {
-        grid-template-columns: 1fr;
+    .card {
+        padding: 20px;
     }
 
-    .results {
-        grid-template-columns: 1fr;
-    }
-
-    .result-card {
-        min-height: auto;
-    }
-
-    .result-card div {
-        font-size: 20px;
-    }
-
-    .telegram-btn,
-    #calculateBtn {
-        font-size: 15px;
+    .telegram-btn {
+        font-size: 16px;
         padding: 14px;
+        white-space: normal;
+        line-height: 1.4;
     }
 }
