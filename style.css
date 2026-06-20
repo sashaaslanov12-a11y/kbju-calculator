@@ -194,6 +194,7 @@ select:focus {
 
     .telegram-btn,
     #calculateBtn {
-        font-size: 17px;
+        font-size: 15px;
+        padding: 14px;
     }
 }
