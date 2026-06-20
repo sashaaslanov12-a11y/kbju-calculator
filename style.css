@@ -1,0 +1,198 @@
+css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #111315;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+h1 span {
+    display: block;
+    color: #a0a0a0;
+    font-size: 24px;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+.card {
+    background: #1c1f24;
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow:
+            0 10px 40px rgba(0,0,0,0.35);
+}
+
+.input-card {
+    margin-bottom: 20px;
+}
+
+.gender-box {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.gender-btn {
+    border: none;
+    background: #2b2f36;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.25s;
+}
+
+.gender-btn:hover {
+    background: #3a404a;
+}
+
+.gender-btn.active {
+    background: #2d88ff;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+input,
+select {
+    background: #2b2f36;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    padding: 18px;
+    font-size: 17px;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #2d88ff;
+}
+
+#calculateBtn {
+    width: 100%;
+    background: #2d88ff;
+    color: white;
+    border: none;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.25s;
+}
+
+#calculateBtn:hover {
+    transform: translateY(-2px);
+}
+
+.telegram-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background: #2fa572;
+    color: white;
+    padding: 18px;
+    margin-top: 15px;
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.telegram-btn:hover {
+    transform: translateY(-2px);
+    background: #278c60;
+}
+
+.formula-info {
+    background: #1c1f24;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #cfcfcf;
+    line-height: 1.6;
+}
+
+.results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.result-card {
+    text-align: center;
+    min-height: 350px;
+}
+
+.result-card h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.result-card div {
+    font-size: 22px;
+    line-height: 1.9;
+    white-space: pre-line;
+}
+
+.warning {
+    color: #ffb347;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .inputs {
+        grid-template-columns: 1fr;
+    }
+
+    .results {
+        grid-template-columns: 1fr;
+    }
+
+    .result-card {
+        min-height: auto;
+    }
+
+    .result-card div {
+        font-size: 20px;
+    }
+
+    .telegram-btn,
+    #calculateBtn {
+        font-size: 17px;
+    }
+}
