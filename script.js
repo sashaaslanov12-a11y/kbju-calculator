@@ -205,25 +205,8 @@ function calculate() {
 
     // ================= ВЫВОД ФОРМУЛ =================
 
-    document.getElementById(
-        "formulaInfo"
-    ).innerHTML =
-        `
-        Харрис-Бенедикт:
-        ${Math.round(harris)} ккал
-        <br><br>
-
-        Миффлин-Сан Жеор:
-        ${Math.round(mifflin)} ккал
-        <br><br>
-
-        Среднее:
-        ${Math.round(bmr)} ккал
-        <br><br>
-
-        Поддержание:
-        ${Math.round(maintenance)} ккал
-        `;
+document.getElementById("formulaInfo").innerHTML =
+    "Ваши индивидуальные нормы КБЖУ рассчитаны ↓";
 
     // ================= ВЫВОД КАРТОЧЕК =================
 
